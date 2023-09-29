@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,400;1,500&family=Spectral:wght@400;500;700;800&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #191919;
+}
+
+/* qui fissiamo gli stili della navbar */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2em;
+  background-color: #ffc017;
+  border-bottom: 1px solid #191919;
+}
+
+nav .logo img {
+  width: 170px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+nav ul li {
+  list-style-type: none;
+  margin-right: 1.8em;
+}
+
+.first-btn {
+  width: 113px;
+  position: absolute;
+  top: 25px;
+  right: 70px;
+}
+
+.first-btn button {
+  border: none;
+  background-color: #191919;
+  border-radius: 25px;
+  padding: 0.8em 1em;
+  color: white;
+  font-size: 15px;
+}
+
+/* qui fissiamo stili della parte hero */
+section {
+  height: 55vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ffc017;
+  border-bottom: 1px solid #191919;
+}
+
+section .title {
+  flex-shrink: 1;
+  margin-top: -4em;
+  margin-left: 4.5em;
+}
+
+h1 {
+  font-family: "Spectral", serif;
+  font-weight: 400;
+  font-size: 100px;
+}
+
+section h3 {
+  font-size: 20px;
+  margin-top: 1.5em;
+}
+
+section button {
+  border: none;
+  background-color: #191919;
+  border-radius: 25px;
+  padding: 0.6em 2.4em;
+  color: white;
+  font-size: 20px;
+  margin-top: 2.4em;
+  font-weight: 400;
+}
+
+.little-title {
+  display: flex;
+  align-items: center;
+  margin-top: 2em;
+  margin-left: 4em;
+}
+
+/* qui settiamo stili prima section del main */
+.number-text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 28% !important;
+  margin-bottom: 2em;
+}
+
+.number-text span {
+  font-size: 30px;
+  color: #191919;
+  opacity: 0.2;
+}
+
+.img-text {
+  display: flex;
+  align-items: center;
+}
+
+.img-text img {
+  width: 25px;
+  border-radius: 50px;
+  margin-right: 0.6em;
+}
+
+.img-text p {
+  font-size: 14px;
+}
+
+.text-1 {
+  display: flex;
+  flex-direction: column;
+  line-height: 2em;
+}
+
+.text-1 h4 {
+  font-weight: 700;
+}
+
+.text-1 p {
+  font-weight: 400;
+  color: #999;
+  font-size: 14px;
+}
+
+.second {
+  margin-left: 3em;
+  margin-top: -2em;
+  line-height: 2em;
+}
+
+#content-first {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 1em 6em;
+}
+main hr {
+  border: 0.6px solid #191919;
+  opacity: 0.2;
+}
+
+/* stile della seconda parte del maine, la parte degli article in column */
+article .content-second .head {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+article .content-second .head img {
+  width: 25px;
+  border-radius: 50px;
+}
+
+article .content-second .text-2 h4 {
+  font-weight: 700;
+}
+
+article .content-second .text-2 p {
+  color: #999;
+  font-size: 14px;
+}
+
+article .content-second .image img {
+  width: 200px;
+}
+
+.content-second {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  line-height: 1.4em;
+}
+
+.container p {
+  line-height: 1.1em;
+}
+
+.note {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.note button {
+  color: #191919;
+  background-color: #e2e2e2;
+  border-radius: 20px;
+  border: none;
+  padding: 0.5em;
+  opacity: 0.7;
+}
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* ASIDE con position fixed laterale */
+#primary-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 6em;
+}
+
+aside {
+  width: 40%;
+}
+
+#fixed {
+  position: sticky;
+  top: 0;
+}
+
+aside ul li {
+  list-style-type: none;
+  color: #191919;
+  opacity: 0.7;
+}
+
+aside h3 {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  color: #191919;
+  margin-bottom: 1em;
+}
+
+aside ul li a {
+  text-decoration: none;
+  color: #191919;
+  opacity: 0.7;
+  font-size: 14px;
+}
+
+aside button {
+  border: none;
+  color: #191919;
+  background-color: #e2e2e2;
+  opacity: 0.7;
+  padding: 0.5em 1em;
+  border-radius: 20px;
+  margin-bottom: 1em;
+  margin-right: 0.7em;
+}
+
+aside ul {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+aside li {
+  margin-right: 1.5em;
+  line-height: 1.7em;
+}
